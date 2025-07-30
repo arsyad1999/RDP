@@ -1,0 +1,10 @@
+name: RDP
+on: [workflow_dispatch]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Setup RDP via Ngrok
+        run: |
+          curl -s https://raw.githubusercontent.com/CYB3RKING/RDP/main/setup.sh | bash
